@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sportstrama | Privacy Policy</title>
+  <title>Trama | Política de Privacidade</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -12,44 +12,114 @@
 <body>
   <main class="main">
     <div class="header">
-      <div class="badge">Privacy</div>
-      <h1 class="title">Privacy Policy</h1>
+      <div class="badge">Privacidade</div>
+      <h1 class="title">Política de Privacidade</h1>
     </div>
-    <p class="lead">We respect your data. This page summarizes how Sportstrama collects, uses, and safeguards information.</p>
+    <p class="lead">Respeita a tua privacidade. Esta página explica como Trama coleta, usa e protege os teus dados.</p>
 
     <div class="card section">
-      <h2>Data we collect</h2>
+      <h2>1. O que colectamos</h2>
       <ul class="list">
-        <li>Account info: email, device identifiers.</li>
-        <li>Usage: events to improve reliability and alerts.</li>
-        <li>Payments: processed securely by Stripe; we do not store card numbers.</li>
+        <li><strong>Conta:</strong> Nome, email, foto de perfil (opcional)</li>
+        <li><strong>Preferências:</strong> Desportos, equipas, clubes e atletas favoritos</li>
+        <li><strong>Voz:</strong> Gravações de áudio quando comentas ou ouves sessões</li>
+        <li><strong>Mensagens:</strong> Chat durante salas de áudio</li>
+        <li><strong>Pagamentos:</strong> Geridos por Stripe (nunca guardamos cartão de crédito)</li>
+        <li><strong>Dispositivo:</strong> Modelo, SO, ID único, IP</li>
+        <li><strong>Uso:</strong> Quando usas a app, quais as salas, ratings dados</li>
       </ul>
     </div>
 
     <div class="card section">
-      <h2>How we use data</h2>
+      <h2>2. Para que usamos</h2>
       <ul class="list">
-        <li>Operate live scores, audio rooms, and notifications.</li>
-        <li>Prevent abuse and maintain service quality.</li>
-        <li>Provide support and billing operations.</li>
+        <li>Autenticar a tua conta e manter a sessão</li>
+        <li>Transmitir áudio ao vivo entre comentadores e ouvintes</li>
+        <li>Guardar as tuas preferências e histórico</li>
+        <li>Processar subscrições Premium</li>
+        <li>Analisar comportamento para melhorar a app</li>
+        <li>Mostrar anúncios (apenas em versão gratuita, via Google AdMob)</li>
+        <li>Monitorizar erros e crashes (Sentry)</li>
+        <li>Cumprir leis (ex: GDPR, PSD2)</li>
       </ul>
     </div>
 
     <div class="card section">
-      <h2>Your choices</h2>
+      <h2>3. Com quem compartilhamos</h2>
       <ul class="list">
-        <li>Manage subscriptions via in-app settings or billing portal.</li>
-        <li>Unsubscribe from emails via footer links.</li>
-        <li>Request data deletion: support@sportstrama.com</li>
+        <li><strong>Supabase:</strong> Armazena a tua conta e dados (Portugal)</li>
+        <li><strong>Daily.co:</strong> Transmite o áudio entre hosts e listeners</li>
+        <li><strong>Stripe:</strong> Processa pagamentos de Premium</li>
+        <li><strong>Google AdMob:</strong> Mostra anúncios (versão gratuita)</li>
+        <li><strong>Sentry:</strong> Monitoriza erros da app</li>
       </ul>
+      <p class="small">Estes prestadores têm contratos para proteger os teus dados.</p>
+    </div>
+
+    <div class="card section">
+      <h2>4. Como protegemos</h2>
+      <ul class="list">
+        <li>Todos os dados viajam encriptados (HTTPS)</li>
+        <li>Senhas guardadas com hash (irreversível)</li>
+        <li>Autenticação via Supabase (padrão industrial)</li>
+        <li>2FA disponível nas definições de segurança</li>
+        <li>Alertas de login suspeito</li>
+      </ul>
+    </div>
+
+    <div class="card section">
+      <h2>5. Os teus direitos (GDPR)</h2>
+      <ul class="list">
+        <li><strong>Acesso:</strong> Podes ver todos os teus dados</li>
+        <li><strong>Correção:</strong> Altera a tua foto, nome, preferências</li>
+        <li><strong>Eliminação:</strong> Apaga a conta → apagamos dados em 30 dias</li>
+        <li><strong>Portabilidade:</strong> Exporta os teus dados</li>
+        <li><strong>Oposição:</strong> Desativa anúncios personalizados</li>
+      </ul>
+    </div>
+
+    <div class="card section">
+      <h2>6. Retenção de dados</h2>
+      <ul class="list">
+        <li><strong>Conta ativa:</strong> Guardamos enquanto usas</li>
+        <li><strong>Após eliminação:</strong> Apagamos em 30 dias (GDPR)</li>
+        <li><strong>Backup:</strong> Supabase faz backup, mas também apaga após 30 dias</li>
+        <li><strong>Conteúdo público:</strong> Comments/ratings públicos podem manter-se por motivos operacionais</li>
+      </ul>
+    </div>
+
+    <div class="card section">
+      <h2>7. Cookies & Rastreamento</h2>
+      <ul class="list">
+        <li>Não usamos cookies (é uma app, não um website)</li>
+        <li>Google AdMob usa IDs anonimizados para anúncios</li>
+        <li>Analytics (Supabase) não rastreiam identificação pessoal, apenas eventos</li>
+      </ul>
+    </div>
+
+    <div class="card section">
+      <h2>8. Transferências internacionais</h2>
+      <p>Os teus dados podem ser processados fora da UE (ex: USA via Stripe, Daily.co). Temos contratos Standard Contractual Clauses para assegurar proteção equivalente a GDPR.</p>
+    </div>
+
+    <div class="card section">
+      <h2>9. Mudanças a esta política</h2>
+      <p>Podemos atualizar esta política. Notificar-te-emos por email ou in-app se houver mudanças significativas.</p>
+    </div>
+
+    <div class="card section">
+      <h2>10. Contacta-nos</h2>
+      <p><strong>Email:</strong> support@trama.com<br>
+      <strong>Assunto:</strong> Privacidade ou GDPR<br>
+      Resposta em até 7 dias úteis.</p>
     </div>
 
     <footer class="footer">
-      <span>© 2026 Sportstrama</span>
+      <span>© 2026 Trama</span>
       <div class="cta-row">
         <a href="/">Home</a>
-        <a href="/terms.html">Terms</a>
-        <a href="/contact.html">Contact</a>
+        <a href="/terms.html">Termos</a>
+        <a href="/contact.html">Contacto</a>
       </div>
     </footer>
   </main>
