@@ -10,64 +10,104 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="glow one"></div>
+  <div class="glow two"></div>
   <main class="main">
-    <div class="header">
-      <div class="badge">Sportstrama</div>
-      <h1 class="title">Live games, audio rooms, alerts — all in one place</h1>
-    </div>
-    <p class="lead">The fastest way to follow matches you care about. Real-time game trackers, live audio rooms, push alerts, and premium insights built for superfans.</p>
+    <section class="hero">
+      <div class="hero-left">
+        <div class="pill"><span class="dot"></span>Live sports & audio</div>
+        <div class="hero-title">
+          <div class="app-icon"><div class="app-icon-inner">ST</div></div>
+          <div>
+            <p class="brand-kicker">Sportstrama</p>
+            <h1 class="title">Live games, audio rooms & instant alerts.</h1>
+          </div>
+        </div>
+        <p class="lead">Follow matches you care about with real-time reliability. Goal alerts, key moments, live audio rooms, and premium projections built for superfans.</p>
+        <div class="chips">
+          <span class="chip">Low-latency updates</span>
+          <span class="chip">Audio watch parties</span>
+          <span class="chip">Premium projections</span>
+          <span class="chip">Stripe-secure billing</span>
+        </div>
+        <div class="cta-row hero-ctas">
+          <a class="btn btn-primary" href="sportstrama://premium">Abrir app</a>
+          <a class="btn btn-secondary" href="/pricing.html">Ver preços</a>
+          <span class="meta">Sem anúncios · Cancela quando quiser</span>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <strong>60s</strong>
+            <span>Alertas de golo e cartões</span>
+          </div>
+          <div class="stat">
+            <strong>Audio rooms</strong>
+            <span>Hosts, co-hosts e ouvintes</span>
+          </div>
+          <div class="stat">
+            <strong>Premium</strong>
+            <span>Projeções e picks exclusivas</span>
+          </div>
+        </div>
+      </div>
 
-    <div class="grid section">
+      <div class="card panel-strong">
+        <div class="badge-soft">Premium</div>
+        <h2>Fica à frente de cada jogada</h2>
+        <p>Alertas instantâneos, áudio ao vivo e projeções que cortam o ruído.</p>
+        <ul class="list-check">
+          <li><span class="check"></span><span>Notificações priorizadas para os teus jogos e ligas</span></li>
+          <li><span class="check"></span><span>Salas de áudio com hosts e convidados durante o jogo</span></li>
+          <li><span class="check"></span><span>Gestão de assinatura in-app ou portal Stripe</span></li>
+        </ul>
+        <div class="separator"></div>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="/pricing.html">Escolher plano</a>
+          <a class="btn btn-secondary" href="mailto:support@sportstrama.com">Falar com suporte</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section feature-grid">
       <div class="card">
-        <h2>Why Sportstrama</h2>
-        <p>Multi-sport coverage (soccer, football, basketball, more) with real-time reliability and low-latency updates.</p>
+        <div class="badge-soft">Cobertura em direto</div>
+        <h2>Multi-desporto, baixa latência</h2>
+        <p>Futebol, basquete, NFL e mais, com atualizações consistentes e rápidas.</p>
         <ul class="list">
-          <li>Instant alerts: goals, red cards, injuries, odds shifts.</li>
-          <li>Live audio rooms with hosts and co-hosts.</li>
-          <li>Premium projections and curated picks.</li>
+          <li>Alertas: golos, vermelhos, lesões, odds.</li>
+          <li>Widget de jogo com detalhes em tempo real.</li>
+          <li>Partilha fácil dos melhores momentos.</li>
         </ul>
       </div>
       <div class="card">
-        <h2>Premium</h2>
-        <p>Unlock more signal, less noise.</p>
+        <div class="badge-soft">Audio Rooms</div>
+        <h2>Watch parties ao vivo</h2>
+        <p>Salas de áudio com hosts, co-hosts e ouvintes. Cria a tua bancada digital.</p>
         <ul class="list">
-          <li>Advanced projections and alerts.</li>
-          <li>Priority access to new sports and features.</li>
-          <li>Manage subscription in-app or via billing portal.</li>
+          <li>Convida amigos e cria co-hosts.</li>
+          <li>Moderado e seguro para a comunidade.</li>
+          <li>Funciona durante o jogo inteiro.</li>
         </ul>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="https://apps.apple.com" aria-label="Download on the App Store">Download the app</a>
-          <a class="btn btn-secondary" href="/pricing.html">View pricing</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="section grid">
-      <div class="card">
-        <h2>Support</h2>
-        <p>Need help with billing or access? Email support@sportstrama.com or open the billing portal from your account settings.</p>
-        <div class="cta-row">
-          <a class="btn btn-secondary" href="mailto:support@sportstrama.com">Email support</a>
-          <a class="btn btn-secondary" href="/contact.html">Contact form</a>
-        </div>
       </div>
       <div class="card">
-        <h2>Legal</h2>
-        <p class="small">We keep things simple and transparent. Review our policies below.</p>
-        <div class="cta-row">
-          <a class="btn btn-secondary" href="/privacy.html">Privacy</a>
-          <a class="btn btn-secondary" href="/terms.html">Terms</a>
-        </div>
+        <div class="badge-soft">Suporte & Billing</div>
+        <h2>Transparente e simples</h2>
+        <p>Stripe para pagamentos, cancelamento em 1 clique e portal de faturação.</p>
+        <ul class="list">
+          <li>Portal de faturação: altera plano ou cancela.</li>
+          <li>Suporte rápido: support@sportstrama.com.</li>
+          <li>Políticas claras: privacidade e termos.</li>
+        </ul>
       </div>
-    </div>
+    </section>
 
     <footer class="footer">
       <span>© 2026 Sportstrama</span>
       <div class="cta-row">
-        <a href="/privacy.html">Privacy</a>
-        <a href="/terms.html">Terms</a>
-        <a href="/pricing.html">Pricing</a>
-        <a href="/contact.html">Contact</a>
+        <a href="/privacy.html">Privacidade</a>
+        <a href="/terms.html">Termos</a>
+        <a href="/pricing.html">Preços</a>
+        <a href="/contact.html">Contacto</a>
       </div>
     </footer>
   </main>
