@@ -1,113 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sportstrama | Live Games, Audio, Alerts</title>
+  <meta name="description" content="Trama: app de comentarios desportivos em audio ao vivo, com transparencia sobre fontes, moderacao e privacidade." />
+  <title>Trama | Comentario Desportivo Em Audio Ao Vivo</title>
   <link rel="icon" type="image/webp" href="/icon.webp" />
   <link rel="icon" type="image/png" href="/icon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="glow one"></div>
-  <div class="glow two"></div>
   <main class="main">
+    <header class="topbar">
+      <a class="brand" href="/">
+        <span class="brand-mark">T</span>
+        <span>Trama</span>
+      </a>
+      <nav class="top-links" aria-label="Navegacao principal">
+        <a class="active" href="/">Produto</a>
+        <a href="/pricing.html">Precos</a>
+        <a href="/privacy.html">Privacidade</a>
+        <a href="/terms.html">Termos</a>
+        <a href="/contact.html">Contacto</a>
+      </nav>
+    </header>
+
     <section class="hero">
       <div class="hero-left">
-        <div class="pill"><span class="dot"></span>Comentários desportivos em direto</div>
+        <div class="pill"><span class="dot"></span>Objetivo: informar com clareza</div>
         <div class="hero-title">
           <div class="app-icon">
             <picture>
               <source srcset="icon.webp" type="image/webp" />
-              <img class="app-logo" src="icon.png" alt="Trama" />
+              <img class="app-logo" src="icon.png" alt="Icone da app Trama" />
             </picture>
           </div>
           <div>
-            <p class="brand-kicker">Trama</p>
-            <h1 class="title">Comentários ao vivo de desporto com a comunidade.</h1>
+            <p class="brand-kicker">Trama App</p>
+            <h1 class="title">Ouve e cria comentarios de jogos em audio ao vivo.</h1>
           </div>
         </div>
-        <p class="lead">Ouve comentadores de todo o mundo ou seja tu o comentador. Audio ao vivo de futebol, basquete, ténis, F1 e muito mais.</p>
-        <div class="cta-row hero-ctas">
+        <p class="lead">A Trama e uma app focada em comunidade: ouvintes seguem relatores, relatores criam sessoes em direto e todos podem avaliar a qualidade dos comentarios.</p>
+        <div class="cta-row">
           <a class="btn btn-primary" href="sportstrama://premium">Abrir app</a>
-          <a class="btn btn-secondary" href="/pricing.html">Ver preços</a>
-          <span class="meta">Sem anúncios · Cancela quando quiser</span>
+          <a class="btn btn-secondary" href="/pricing.html">Ver planos</a>
+          <span class="meta">Sem anuncios no Premium. Cancelamento simples.</span>
         </div>
       </div>
+
+      <aside class="hero-right" aria-label="Resumo rapido do produto">
+        <h2>O que a app faz</h2>
+        <ul class="list">
+          <li>Comentarios em audio ao vivo para varios desportos.</li>
+          <li>Criacao de salas por hosts e co-hosts.</li>
+          <li>Avaliacoes e reviews para melhorar qualidade dos relatores.</li>
+          <li>Alertas e notificacoes de sessoes e jogos favoritos.</li>
+        </ul>
+      </aside>
     </section>
 
-    <section class="section">
-      <div class="card panel-strong">
-        <div class="badge-soft">Destaques</div>
-        <div class="stats">
-          <div class="stat">
-            <strong>Global</strong>
-            <span>Comentadores de todo o mundo</span>
-          </div>
-          <div class="stat">
-            <strong>Real-time</strong>
-            <span>Áudio baixa latência</span>
-          </div>
-          <div class="stat">
-            <strong>5-star</strong>
-            <span>Classifica os teus comentadores</span>
-          </div>
+    <section class="section panel-strong">
+      <div class="badge-soft">Confianca e transparencia</div>
+      <div class="stats">
+        <div class="stat">
+          <strong>Dados factuais</strong>
+          <span>Jogos e calendarios sao baseados em informacao desportiva publica.</span>
+        </div>
+        <div class="stat">
+          <strong>Moderacao ativa</strong>
+          <span>Filtros automaticos + revisao humana para reports e conduta.</span>
+        </div>
+        <div class="stat">
+          <strong>Politicas claras</strong>
+          <span>Privacidade, termos e contacto disponiveis no rodape e sempre atualizados.</span>
         </div>
       </div>
     </section>
 
     <section class="section feature-grid">
-      <div class="card">
-        <div class="badge-soft">Comentários ao vivo</div>
-        <h2>Desporto como nunca</h2>
-        <p>Múltiplos desportos: futebol, basquete, ténis, F1, MotoGP, rugby, cricket e muito mais.</p>
+      <article class="card">
+        <div class="badge-soft">Para ouvintes</div>
+        <h2>Acompanhar jogo sem ruido</h2>
+        <p>Descobre relatores por desporto, idioma e classificacao media.</p>
         <ul class="list">
-          <li>Ouve comentadores ao vivo de qualquer jogo.</li>
-          <li>Interage em tempo real, sem latência.</li>
-          <li>Novos desportos adicionados regularmente.</li>
+          <li>Segue relatores e recebe alertas quando entram em direto.</li>
+          <li>Guarda equipas e competicoes favoritas.</li>
+          <li>Partilha sessoes com link direto.</li>
         </ul>
-      </div>
-      <div class="card">
-        <div class="badge-soft">Seja tu o anfitrião</div>
-        <h2>Torna-te comentador</h2>
-        <p>Qualquer um pode fazer comentários. Cria uma sala e começa a transmitir.</p>
+      </article>
+
+      <article class="card">
+        <div class="badge-soft">Para hosts</div>
+        <h2>Relatar com controlo</h2>
+        <p>Cria uma sessao em minutos e gere quem fala na sala.</p>
         <ul class="list">
-          <li>Cria uma sala para o teu jogo predileto.</li>
-          <li>Co-hosts: convida amigos para comentar contigo.</li>
-          <li>Avaliações: recebe feedback de ouvintes.</li>
+          <li>Convida co-hosts para transmissao conjunta.</li>
+          <li>Usa feedback da comunidade para evoluir.</li>
+          <li>Acede a estatisticas no plano Premium.</li>
         </ul>
-      </div>
-      <div class="card">
-        <div class="badge-soft">Notificações & Comunidade</div>
-        <h2>Nunca percas um jogo</h2>
-        <p>Sê avisado quando os teus comentadores prediletos ficam em direto.</p>
+      </article>
+
+      <article class="card">
+        <div class="badge-soft">Limites do produto</div>
+        <h2>O que a Trama nao promete</h2>
+        <p>Preferimos ser claros sobre o alcance real da plataforma.</p>
         <ul class="list">
-          <li>Notificações personalizadas de favoritos.</li>
-          <li>Classifica comentadores (5 estrelas).</li>
-          <li>Histórico de avaliações e comentários.</li>
+          <li>Nao e transmissao oficial de video dos jogos.</li>
+          <li>Resultados e horarios podem ter atraso de fontes externas.</li>
+          <li>Conteudo da comunidade e moderado, mas nao infalivel.</li>
         </ul>
-      </div>
+      </article>
     </section>
 
-    <section class="section">
-      <div class="card panel-strong">
-        <div class="badge-soft">Premium</div>
-        <h2>Mais recursos para comentadores</h2>
-        <p>Audio HD, sem anúncios, e ferramentas avançadas para hosts.</p>
-        <ul class="list-check">
-          <li><span class="check"></span><span>Audio HD e sem anúncios</span></li>
-          <li><span class="check"></span><span>Features avançadas de hosting</span></li>
-          <li><span class="check"></span><span>Suporte prioritário</span></li>
-          <li><span class="check"></span><span>Cancelamento em 1 clique</span></li>
-        </ul>
-        <div class="separator"></div>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="/pricing.html">Ver planos</a>
-          <a class="btn btn-secondary" href="mailto:support@trama.com">Contacto</a>
-        </div>
+    <section class="section card">
+      <div class="badge-soft">Premium</div>
+      <h2>Mais controlo para quem comenta regularmente</h2>
+      <p>Plano premium para utilizadores ativos que querem melhor experiencia e ferramentas de desempenho.</p>
+      <ul class="list-check">
+        <li><span class="check"></span><span>Experiencia sem anuncios</span></li>
+        <li><span class="check"></span><span>Estatisticas avancadas para hosts</span></li>
+        <li><span class="check"></span><span>Gestao de subscricao no portal de faturacao</span></li>
+        <li><span class="check"></span><span>Cancelamento a qualquer momento</span></li>
+      </ul>
+      <div class="separator"></div>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="/pricing.html">Comparar planos</a>
+        <a class="btn btn-secondary" href="mailto:support@sportstrama.com">Falar com suporte</a>
       </div>
     </section>
 
@@ -116,7 +134,7 @@
       <div class="cta-row">
         <a href="/privacy.html">Privacidade</a>
         <a href="/terms.html">Termos</a>
-        <a href="/pricing.html">Preços</a>
+        <a href="/pricing.html">Precos</a>
         <a href="/contact.html">Contacto</a>
       </div>
     </footer>

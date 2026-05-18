@@ -11,107 +11,329 @@
 </head>
 <body>
   <main class="main">
+    <header class="topbar">
+      <a class="brand" href="/">
+        <span class="brand-mark">T</span>
+        <span>Trama</span>
+      </a>
+      <nav class="top-links" aria-label="Navegacao principal">
+        <a href="/">Produto</a>
+        <a href="/pricing.html">Precos</a>
+        <a class="active" href="/privacy.html">Privacidade</a>
+        <a href="/terms.html">Termos</a>
+        <a href="/contact.html">Contacto</a>
+      </nav>
+    </header>
+
     <div class="header">
-      <div class="badge">Privacidade</div>
+      <div class="pill"><span class="dot"></span> Privacidade</div>
       <h1 class="title">Política de Privacidade</h1>
     </div>
-    <p class="lead">Respeita a tua privacidade. Esta página explica como Trama coleta, usa e protege os teus dados.</p>
+    <p class="lead">Data de entrada em vigor: 10 de janeiro de 2026 · Última atualização: 4 de abril de 2026</p>
+    <p class="small">Respeita a tua privacidade. Esta página explica como Trama coleta, usa e protege os teus dados.</p>
 
     <div class="card section">
       <h2>1. O que colectamos</h2>
-      <ul class="list">
-        <li><strong>Conta:</strong> Nome, email, foto de perfil (opcional)</li>
-        <li><strong>Preferências:</strong> Desportos, equipas, clubes e atletas favoritos</li>
-        <li><strong>Voz:</strong> Gravações de áudio quando comentas ou ouves sessões</li>
-        <li><strong>Mensagens:</strong> Chat durante salas de áudio</li>
-        <li><strong>Pagamentos:</strong> Geridos por Stripe (nunca guardamos cartão de crédito)</li>
-        <li><strong>Dispositivo:</strong> Modelo, SO, ID único, IP</li>
-        <li><strong>Uso:</strong> Quando usas a app, quais as salas, ratings dados</li>
+      <h3>1.1 Dados da conta</h3>
+      <ul class="list-check">
+        <li><span class="check"></span><span>Nome de exibição, email (verificado), foto de perfil (opcional)</span></li>
+        <li><span class="check"></span><span>Bio, país de residência</span></li>
+        <li><span class="check"></span><span>Idiomas preferidos (para ouvir e apresentar)</span></li>
+      </ul>
+      <h3>1.2 Preferências e favoritos</h3>
+      <ul class="list-check">
+        <li><span class="check"></span><span>Desportos preferidos (até 13: futebol, basquetebol, críquete, ténis, F1, MotoGP, rugby, basebol, voleibol, andebol, hóquei, NFL, MMA)</span></li>
+        <li><span class="check"></span><span>Equipas, clubes, competições e atletas favoritos</span></li>
+        <li><span class="check"></span><span>Relatores favoritos (UIDs)</span></li>
+        <li><span class="check"></span><span>Preferências de notificações (tipo, horário "Não Perturbar")</span></li>
+      </ul>
+      <h3>1.3 Conteúdo gerado pelo utilizador</h3>
+      <ul class="list-check">
+        <li><span class="check"></span><span>Gravações de áudio ao vivo (quando comentas sessões)</span></li>
+        <li><span class="check"></span><span>Mensagens de chat em sessões</span></li>
+        <li><span class="check"></span><span>Avaliações (1-5 estrelas) e reviews de relatores</span></li>
+        <li><span class="check"></span><span>Reações/emojis durante sessões</span></li>
+        <li><span class="check"></span><span>Reports contra outros utilizadores</span></li>
+        <li><span class="check"></span><span>Pedidos de ajuda/feedback (incluindo screenshots opcionais)</span></li>
+      </ul>
+      <h3>1.4 Dados técnicos e de dispositivo</h3>
+      <ul class="list-check">
+        <li><span class="check"></span><span>Modelo de dispositivo, sistema operativo, versão da app</span></li>
+        <li><span class="check"></span><span>Identificador único do dispositivo (device ID)</span></li>
+        <li><span class="check"></span><span>Endereço IP</span></li>
+        <li><span class="check"></span><span>Estado da conectividade de rede</span></li>
+      </ul>
+      <h3>1.5 Dados de segurança e sessão</h3>
+      <ul class="list-check">
+        <li><span class="check"></span><span>Histórico de tentativas de login (dispositivo, IP, timestamp, sucesso/falha)</span></li>
+        <li><span class="check"></span><span>Sessões de dispositivo ativas (para prevenir abuso multi-dispositivo)</span></li>
+        <li><span class="check"></span><span>Estado 2FA (ativado/desativado)</span></li>
+      </ul>
+      <h3>1.6 Dados de uso e atividade</h3>
+      <ul class="list-check">
+        <li><span class="check"></span><span>Heartbeats de atividade em sessões (entrada, saída, mensagem, avaliação)</span></li>
+        <li><span class="check"></span><span>Histórico de sessões (quem apresentou, quando, duração, ouvintes)</span></li>
+        <li><span class="check"></span><span>Relatos agendados (jogo, estado, host)</span></li>
+        <li><span class="check"></span><span>Dados de seguir/seguidores</span></li>
+      </ul>
+      <h3>1.7 Dados de moderação</h3>
+      <ul class="list-check">
+        <li><span class="check"></span><span>Histórico de reports enviados e recebidos</span></li>
+        <li><span class="check"></span><span>Ações de moderação aplicadas (avisos, bans, remoções)</span></li>
+        <li><span class="check"></span><span>Resultados de filtros automáticos (profanidade, spam, discurso de ódio)</span></li>
+      </ul>
+      <h3>1.8 Pagamento</h3>
+      <ul class="list-check">
+        <li><span class="check"></span><span>Geridos por Stripe (nunca guardamos cartão de crédito)</span></li>
+        <li><span class="check"></span><span>IDs de cliente e subscrição Stripe, plano, datas de ativação/cancelamento</span></li>
+        <li><span class="check"></span><span>Utilização de códigos promocionais</span></li>
+      </ul>
+      <h3>1.9 Armazenamento local</h3>
+      <ul class="list-check">
+        <li><span class="check"></span><span>SharedPreferences: estado de onboarding, cache de preferências, sessões notificadas, tempos de sincronização</span></li>
+        <li><span class="check"></span><span>Estes dados ficam apenas no teu dispositivo e não são enviados para os nossos servidores</span></li>
       </ul>
     </div>
 
     <div class="card section">
       <h2>2. Para que usamos</h2>
-      <ul class="list">
-        <li>Autenticar a tua conta e manter a sessão</li>
-        <li>Transmitir áudio ao vivo entre comentadores e ouvintes</li>
-        <li>Guardar as tuas preferências e histórico</li>
-        <li>Processar subscrições Premium</li>
-        <li>Analisar comportamento para melhorar a app</li>
-        <li>Mostrar anúncios (apenas em versão gratuita, via Google AdMob)</li>
-        <li>Monitorizar erros e crashes (Sentry)</li>
-        <li>Cumprir leis (ex: GDPR, PSD2)</li>
+      <ul class="list-check">
+        <li><span class="check"></span><span>Autenticar a tua conta e manter a sessão</span></li>
+        <li><span class="check"></span><span>Transmitir áudio ao vivo entre comentadores e ouvintes</span></li>
+        <li><span class="check"></span><span>Guardar as tuas preferências, favoritos e histórico</span></li>
+        <li><span class="check"></span><span>Calcular rankings e estatísticas de desempenho</span></li>
+        <li><span class="check"></span><span>Enviar notificações sobre jogos, sessões e atividade social</span></li>
+        <li><span class="check"></span><span>Processar subscrições Premium e códigos promocionais</span></li>
+        <li><span class="check"></span><span>Moderar conteúdo (humana e automaticamente)</span></li>
+        <li><span class="check"></span><span>Analisar comportamento para melhorar a app</span></li>
+        <li><span class="check"></span><span>Mostrar anúncios (apenas em versão gratuita, via Google AdMob)</span></li>
+        <li><span class="check"></span><span>Monitorizar erros e crashes (Sentry)</span></li>
+        <li><span class="check"></span><span>Detetar logins suspeitos e prevenir abuso multi-dispositivo</span></li>
+        <li><span class="check"></span><span>Monitorizar custos operacionais de sessões (interno)</span></li>
+        <li><span class="check"></span><span>Executar tarefas em segundo plano (monitorização de jogos favoritos)</span></li>
+        <li><span class="check"></span><span>Cumprir leis (ex: GDPR, PSD2)</span></li>
       </ul>
     </div>
 
     <div class="card section">
       <h2>3. Com quem compartilhamos</h2>
-      <ul class="list">
-        <li><strong>Supabase:</strong> Armazena a tua conta e dados (Portugal)</li>
-        <li><strong>Daily.co:</strong> Transmite o áudio entre hosts e listeners</li>
-        <li><strong>Stripe:</strong> Processa pagamentos de Premium</li>
-        <li><strong>Google AdMob:</strong> Mostra anúncios (versão gratuita)</li>
-        <li><strong>Sentry:</strong> Monitoriza erros da app</li>
+      <ul class="list-check">
+        <li><span class="check"></span><span><strong>Supabase:</strong> Armazena a tua conta e dados (base de dados e autenticação)</span></li>
+        <li><span class="check"></span><span><strong>Daily.co:</strong> Transmite o áudio entre hosts e listeners (Data Processing Agreement em vigor)</span></li>
+        <li><span class="check"></span><span><strong>Stripe:</strong> Processa pagamentos de Premium</span></li>
+        <li><span class="check"></span><span><strong>Google AdMob:</strong> Mostra anúncios (versão gratuita). Usa identificadores anonimizados</span></li>
+        <li><span class="check"></span><span><strong>Sentry:</strong> Monitoriza erros da app. Pode capturar screenshots automáticos do estado da app durante crashes para diagnóstico</span></li>
       </ul>
-      <p class="small">Estes prestadores têm contratos para proteger os teus dados.</p>
+      <p class="small">Estes prestadores têm contratos para proteger os teus dados. Daily.co processa dados de voz (biométricos) sob GDPR Art. 9 com encriptação TLS.</p>
     </div>
 
     <div class="card section">
-      <h2>4. Como protegemos</h2>
-      <ul class="list">
-        <li>Todos os dados viajam encriptados (HTTPS)</li>
-        <li>Senhas guardadas com hash (irreversível)</li>
-        <li>Autenticação via Supabase (padrão industrial)</li>
-        <li>2FA disponível nas definições de segurança</li>
-        <li>Alertas de login suspeito</li>
-      </ul>
-    </div>
-
-    <div class="card section">
-      <h2>5. Os teus direitos (GDPR)</h2>
-      <ul class="list">
-        <li><strong>Acesso:</strong> Podes ver todos os teus dados</li>
-        <li><strong>Correção:</strong> Altera a tua foto, nome, preferências</li>
-        <li><strong>Eliminação:</strong> Apaga a conta → apagamos dados em 30 dias</li>
-        <li><strong>Portabilidade:</strong> Exporta os teus dados</li>
-        <li><strong>Oposição:</strong> Desativa anúncios personalizados</li>
+      <h2>3.1 Dados Biométricos — Voz (GDPR Art. 9)</h2>
+      <ul class="list-check">
+        <li><span class="check"></span><span><strong>O que:</strong> As tuas gravações de áudio quando comentas sessões ao vivo</span></li>
+        <li><span class="check"></span><span><strong>Classificação:</strong> Dado biométrico sob GDPR Artigo 9</span></li>
+        <li><span class="check"></span><span><strong>Base legal:</strong> Consentimento explícito quando ativas comentário de áudio</span></li>
+        <li><span class="check"></span><span><strong>Processador:</strong> Daily.co (USA) com Data Processing Agreement</span></li>
+        <li><span class="check"></span><span><strong>Duração:</strong> Apenas em memória durante a sessão. Não armazenado permanentemente a menos que o guardes</span></li>
+        <li><span class="check"></span><span><strong>Segurança:</strong> Encriptação TLS/SSL em trânsito, contrato de processamento em vigor</span></li>
+        <li><span class="check"></span><span><strong>Risco:</strong> Daily.co é USA-based. Temos Standard Contractual Clauses, mas USA pode aceder sob Section 702/FISA</span></li>
+        <li><span class="check"></span><span><strong>Teu direito:</strong> Podes eliminar conta e dados de áudio em qualquer altura. Contacta support@sportstrama.com</span></li>
       </ul>
     </div>
 
     <div class="card section">
-      <h2>6. Retenção de dados</h2>
-      <ul class="list">
-        <li><strong>Conta ativa:</strong> Guardamos enquanto usas</li>
-        <li><strong>Após eliminação:</strong> Apagamos em 30 dias (GDPR)</li>
-        <li><strong>Backup:</strong> Supabase faz backup, mas também apaga após 30 dias</li>
-        <li><strong>Conteúdo público:</strong> Comments/ratings públicos podem manter-se por motivos operacionais</li>
+      <h2>4. Decisões automatizadas (GDPR Art. 22)</h2>
+      <ul class="list-check">
+        <li><span class="check"></span><span><strong>Moderação automática:</strong> A app utiliza filtros automáticos para detetar profanidade (PT e EN), padrões de spam (URLs, CAPS excessivos, repetições) e palavras-chave de discurso de ódio</span></li>
+        <li><span class="check"></span><span><strong>Consequência:</strong> Conteúdo detetado pode ser bloqueado automaticamente ou sinalizado para revisão humana</span></li>
+        <li><span class="check"></span><span><strong>Rankings:</strong> As posições no leaderboard são calculadas automaticamente a partir de médias ponderadas de avaliações</span></li>
+        <li><span class="check"></span><span><strong>Teu direito:</strong> Podes contestar qualquer decisão automatizada em support@sportstrama.com e solicitar revisão humana</span></li>
       </ul>
     </div>
 
     <div class="card section">
-      <h2>7. Cookies & Rastreamento</h2>
-      <ul class="list">
-        <li>Não usamos cookies (é uma app, não um website)</li>
-        <li>Google AdMob usa IDs anonimizados para anúncios</li>
-        <li>Analytics (Supabase) não rastreiam identificação pessoal, apenas eventos</li>
+      <h2>5. Como protegemos</h2>
+      <ul class="list-check">
+        <li><span class="check"></span><span>Todos os dados viajam encriptados (HTTPS/TLS)</span></li>
+        <li><span class="check"></span><span>Senhas guardadas com hash (irreversível)</span></li>
+        <li><span class="check"></span><span>Autenticação via Supabase (padrão industrial)</span></li>
+        <li><span class="check"></span><span>2FA disponível nas definições de segurança (código de 6 dígitos por email)</span></li>
+        <li><span class="check"></span><span>Alertas de login suspeito (novo dispositivo/IP)</span></li>
+        <li><span class="check"></span><span>Gestão de sessões de dispositivo (logout forçado em outros dispositivos)</span></li>
       </ul>
     </div>
 
     <div class="card section">
-      <h2>8. Transferências internacionais</h2>
-      <p>Os teus dados podem ser processados fora da UE (ex: USA via Stripe, Daily.co). Temos contratos Standard Contractual Clauses para assegurar proteção equivalente a GDPR.</p>
+      <h2>5.1 Incidentes de Segurança & Notificação</h2>
+      <ul class="list-check">
+        <li><span class="check"></span><span><strong>Resposta:</strong> Investigamos e mitigamos rapidamente incidentes</span></li>
+        <li><span class="check"></span><span><strong>Notificação:</strong> Informamos utilizadores e autoridades quando exigido (ex: 72h no GDPR)</span></li>
+        <li><span class="check"></span><span><strong>Processadores:</strong> Em incidentes de terceiros (ex: Stripe), coordenamos comunicação e remediação</span></li>
+        <li><span class="check"></span><span><strong>Pagamentos:</strong> Não armazenamos cartões; Stripe é PCI DSS</span></li>
+      </ul>
     </div>
 
     <div class="card section">
-      <h2>9. Mudanças a esta política</h2>
+      <h2>5.2 Monitorização de erros (Sentry)</h2>
+      <ul class="list-check">
+        <li><span class="check"></span><span>Sentry recolhe: stack traces, breadcrumbs automáticos, informação do dispositivo/SO</span></li>
+        <li><span class="check"></span><span>Sentry pode capturar screenshots automáticos do estado visual da app no momento de um crash</span></li>
+        <li><span class="check"></span><span>Os screenshots são usados exclusivamente para diagnóstico e resolução de bugs</span></li>
+        <li><span class="check"></span><span>Sentry processa dados nos EUA/UE sob Standard Contractual Clauses</span></li>
+      </ul>
+    </div>
+
+    <div class="card section">
+      <h2>6. Os teus direitos (GDPR)</h2>
+      <ul class="list-check">
+        <li><span class="check"></span><span><strong>Acesso:</strong> Podes ver todos os teus dados</span></li>
+        <li><span class="check"></span><span><strong>Correção:</strong> Altera a tua foto, nome, país, preferências</span></li>
+        <li><span class="check"></span><span><strong>Eliminação:</strong> Apaga a conta → apagamos dados em 30 dias</span></li>
+        <li><span class="check"></span><span><strong>Portabilidade:</strong> Exporta os teus dados</span></li>
+        <li><span class="check"></span><span><strong>Oposição:</strong> Desativa anúncios personalizados</span></li>
+        <li><span class="check"></span><span><strong>Restrição:</strong> Podes solicitar limitação do processamento</span></li>
+        <li><span class="check"></span><span><strong>Contestar decisão automatizada:</strong> Podes solicitar revisão humana de decisões automatizadas (Art. 22)</span></li>
+      </ul>
+    </div>
+
+    <div class="card section">
+      <h2>7. Retenção de dados</h2>
+      <ul class="list-check">
+        <li><span class="check"></span><span><strong>Conta ativa:</strong> Guardamos enquanto usas</span></li>
+        <li><span class="check"></span><span><strong>Após eliminação:</strong> Apagamos em 30 dias (GDPR)</span></li>
+        <li><span class="check"></span><span><strong>Backup:</strong> Supabase faz backup, mas também apaga após 30 dias</span></li>
+        <li><span class="check"></span><span><strong>Conteúdo público:</strong> Ratings/reviews publicados podem manter-se por motivos operacionais (anonimizados)</span></li>
+        <li><span class="check"></span><span><strong>Dados de moderação:</strong> Mantidos durante o período necessário para evitar repetição de infrações</span></li>
+        <li><span class="check"></span><span><strong>Áudio:</strong> Só em memória durante a sessão. Salas Daily.co expiram em 24h</span></li>
+        <li><span class="check"></span><span><strong>Logs de login:</strong> Retidos por 90 dias para deteção de fraude</span></li>
+      </ul>
+    </div>
+
+    <div class="card section">
+      <h2>8. Cookies & Rastreamento</h2>
+      <ul class="list-check">
+        <li><span class="check"></span><span>Não usamos cookies (é uma app, não um website)</span></li>
+        <li><span class="check"></span><span>Google AdMob usa IDs anonimizados para anúncios</span></li>
+        <li><span class="check"></span><span>Analytics (Supabase) não rastreiam identificação pessoal, apenas eventos</span></li>
+        <li><span class="check"></span><span>SharedPreferences armazena dados locais no dispositivo (não são enviados)</span></li>
+      </ul>
+    </div>
+
+    <div class="card section">
+      <h2>9. Dados desportivos</h2>
+      <ul class="list-check">
+        <li><span class="check"></span><span>A app recolhe dados factuais de calendários desportivos publicamente disponíveis (ESPN, ESPNcricinfo, ATP/WTA, Formula1.com, MotoGP.com, NHL.com, NBA.com, entre outros)</span></li>
+        <li><span class="check"></span><span>Apenas dados factuais: datas, horários, equipas, nomes — sem conteúdo editorial protegido</span></li>
+        <li><span class="check"></span><span>User-Agent identificado como TramaSportsApp; taxa limitada a ≥5 min com cache de 24h</span></li>
+        <li><span class="check"></span><span>Não acedemos a áreas protegidas por login ou paywall</span></li>
+        <li><span class="check"></span><span>Não armazenamos logos, imagens, dados pessoais ou conteúdo criativo de terceiros</span></li>
+      </ul>
+    </div>
+
+    <div class="card section">
+      <h2>10. Tarefas em segundo plano</h2>
+      <ul class="list-check">
+        <li><span class="check"></span><span>A app pode executar tarefas em segundo plano (via WorkManager/Android) para monitorizar jogos favoritos e enviar lembretes</span></li>
+        <li><span class="check"></span><span>Estas tarefas verificam localmente se há jogos próximos, com intervalos mínimos de 5 minutos</span></li>
+        <li><span class="check"></span><span>Podes desativar as notificações individuais nas definições da app</span></li>
+      </ul>
+    </div>
+
+    <div class="card section">
+      <h2>11. Deep links</h2>
+      <ul class="list-check">
+        <li><span class="check"></span><span>A app processa deep links (trama://) para: verificação de email, reposição de senha, navegação para perfis de relatores e jogos</span></li>
+        <li><span class="check"></span><span>Os dados dos deep links são usados apenas para navegação e não são armazenados</span></li>
+      </ul>
+    </div>
+
+    <div class="card section">
+      <h2>12. Transferências internacionais</h2>
+      <p>Os teus dados podem ser processados fora da UE (ex: USA via Stripe, Daily.co, Sentry). Temos contratos Standard Contractual Clauses para assegurar proteção equivalente a GDPR. Dados de voz processados por Daily.co (USA) estão protegidos por SCC, mas a lei USA (Section 702/FISA) pode permitir acesso governamental. Tens o direito de saber isto e de contactar-nos para mais informações.</p>
+    </div>
+
+    <div class="card section">
+      <h2>13. Mudanças a esta política</h2>
       <p>Podemos atualizar esta política. Notificar-te-emos por email ou in-app se houver mudanças significativas.</p>
     </div>
 
     <div class="card section">
-      <h2>10. Contacta-nos</h2>
-      <p><strong>Email:</strong> support@trama.com<br>
-      <strong>Assunto:</strong> Privacidade ou GDPR<br>
+      <h2>14. Contacta-nos</h2>
+      <p><strong>Email:</strong> support@sportstrama.com<br>
+      <strong>Assunto:</strong> Privacidade, GDPR, dados biométricos, ou decisões automatizadas<br>
+      <strong>DPO (Data Protection Officer):</strong> Estamos comprometidos com GDPR, incluindo proteção de dados biométricos (Art. 9) e direito a revisão de decisões automatizadas (Art. 22)<br>
       Resposta em até 7 dias úteis.</p>
+    </div>
+
+    <div class="card section">
+      <h2>15. Suplementos Regionais</h2>
+
+      <h3>Brasil (LGPD)</h3>
+      <ul class="list-check">
+        <li><span class="check"></span><span><strong>Controlador & DPO:</strong> Trama (contacto: support@sportstrama.com)</span></li>
+        <li><span class="check"></span><span><strong>Bases legais:</strong> Consentimento; execução de contrato; interesse legítimo (quando aplicável)</span></li>
+        <li><span class="check"></span><span><strong>Direitos do titular:</strong> Confirmação, acesso, correção, anonimização, portabilidade, eliminação, informação sobre partilha, revogação de consentimento, revisão de decisões automatizadas</span></li>
+        <li><span class="check"></span><span><strong>Transferências internacionais:</strong> Dados processados na UE e EUA com salvaguardas contratuais. Voz via Daily.co (EUA) — ver secções 3.1 e 12</span></li>
+        <li><span class="check"></span><span><strong>Dados opcionais:</strong> Localização aproximada apenas com opt-in (Definições > Privacidade), revogável a qualquer momento</span></li>
+      </ul>
+      <p class="small">Para exercer direitos LGPD, contacta-nos e inclui "Pedido LGPD" no assunto.</p>
+    </div>
+
+    <div class="card section">
+      <h3>Califórnia (CPRA)</h3>
+      <ul class="list-check">
+        <li><span class="check"></span><span><strong>Direitos:</strong> Acesso, eliminação, correção, portabilidade</span></li>
+        <li><span class="check"></span><span><strong>Opt-out:</strong> Venda/partilha de dados e publicidade comportamental entre contextos</span></li>
+        <li><span class="check"></span><span><strong>Dados sensíveis:</strong> Podes limitar o uso (quando aplicável)</span></li>
+        <li><span class="check"></span><span><strong>Não discriminação:</strong> Não sofrerás tratamento diferente por exercer direitos</span></li>
+        <li><span class="check"></span><span><strong>Aviso na recolha:</strong> Categorias e finalidades estão nas secções 1–2 desta página</span></li>
+        <li><span class="check"></span><span><strong>Do Not Sell/Share:</strong> Não vendemos dados. Se houver partilha para anúncios, podes optar por não partilhar nas definições ou por email</span></li>
+      </ul>
+      <p class="small">Para exercer o CPRA, envia email para support@sportstrama.com com "CPRA Request" e indica o teu estado de residência.</p>
+    </div>
+
+    <div class="card section">
+      <h3>Reino Unido (UK GDPR)</h3>
+      <ul class="list-check">
+        <li><span class="check"></span><span><strong>Leis aplicáveis:</strong> UK GDPR e Data Protection Act 2018</span></li>
+        <li><span class="check"></span><span><strong>Direitos:</strong> Acesso, retificação, apagamento, restrição, portabilidade, oposição e revogação de consentimento</span></li>
+        <li><span class="check"></span><span><strong>Autoridade:</strong> Podes reclamar à UK ICO (Information Commissioner's Office)</span></li>
+        <li><span class="check"></span><span><strong>Transferências:</strong> Usamos o UK IDTA com SCCs para transferências (incl. Daily.co para voz — ver secções 3.1 e 12)</span></li>
+      </ul>
+      <p class="small">Pedidos UK: support@sportstrama.com</p>
+    </div>
+
+    <div class="card section">
+      <h3>Canadá (PIPEDA)</h3>
+      <ul class="list-check">
+        <li><span class="check"></span><span><strong>Lei aplicável:</strong> PIPEDA</span></li>
+        <li><span class="check"></span><span><strong>Princípios:</strong> Responsabilidade, fins identificados, consentimento, limitação da recolha/uso, exatidão, salvaguardas, abertura, acesso do titular, contestação de conformidade</span></li>
+        <li><span class="check"></span><span><strong>Direitos:</strong> Acesso e correção dos dados</span></li>
+        <li><span class="check"></span><span><strong>Transferências:</strong> Podem ocorrer para UE/EUA com salvaguardas contratuais; para voz (Daily.co/EUA) ver secções 3.1 e 12</span></li>
+        <li><span class="check"></span><span><strong>Reclamações:</strong> support@sportstrama.com ou Office of the Privacy Commissioner of Canada (OPC)</span></li>
+      </ul>
+    </div>
+
+    <div class="card section">
+      <h3>Austrália (Privacy Act & APPs)</h3>
+      <ul class="list-check">
+        <li><span class="check"></span><span><strong>Lei aplicável:</strong> Privacy Act 1988 e Australian Privacy Principles</span></li>
+        <li><span class="check"></span><span><strong>Direitos:</strong> Acesso e correção</span></li>
+        <li><span class="check"></span><span><strong>Divulgações internacionais (APP 8):</strong> Tomamos medidas razoáveis para proteção equivalente; transferências para UE/EUA (incl. Daily.co para voz)</span></li>
+        <li><span class="check"></span><span><strong>Informação sensível:</strong> Processada apenas com consentimento ou como permitido por lei</span></li>
+        <li><span class="check"></span><span><strong>Reclamações:</strong> support@sportstrama.com ou OAIC (Office of the Australian Information Commissioner)</span></li>
+      </ul>
+    </div>
+
+    <div class="card section panel-strong">
+      <div class="badge-soft">FAQ rapido e confianca</div>
+      <h2>Como garantimos informacao clara</h2>
+      <ul class="list-check">
+        <li><span class="check"></span><span><strong>Como tratamos dados:</strong> recolhemos apenas o necessario para conta, audio ao vivo, moderacao e notificacoes. Nao vendemos dados pessoais.</span></li>
+        <li><span class="check"></span><span><strong>Fonte dos dados desportivos:</strong> calendarios e resultados sao dados factuais de fontes publicas e podem ter atraso ou correcoes.</span></li>
+        <li><span class="check"></span><span><strong>O que podes controlar:</strong> favoritos, preferencias de notificacao, modo nao perturbar e pedido de eliminacao de conta/dados.</span></li>
+      </ul>
+      <p class="small">Perguntas adicionais: support@sportstrama.com</p>
     </div>
 
     <footer class="footer">
